@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\X.png" />
+    <AndroidResource Include="Resources\drawable\O.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XOGame\XOGame.csproj">

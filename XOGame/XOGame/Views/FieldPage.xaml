@@ -1,33 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XOGame.Views.FieldPage">
+             x:Class="XOGame.Views.FieldPage"
+            Padding="0">
 
-    <ContentPage.Resources>
+   <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#DBDBDB" />
-                <Setter Property="BorderRadius" Value="5" />
-                <Setter Property="FontSize" Value="55" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="Black" />
-            </Style>
-            <Style x:Key="OrangeButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#FFA200" />
-                <Setter Property="BorderRadius" Value="5" />
-                <Setter Property="FontSize" Value="55" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="White" />
-            </Style>
-            <Style x:Key="ResultLabel" TargetType="Label">
                 <Setter Property="BackgroundColor" Value="Black" />
-                <Setter Property="FontSize" Value="55" />
-                <Setter Property="TextColor" Value="White" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <Grid BackgroundColor="Red" Padding="15" ColumnSpacing="5" RowSpacing="5">
+  
+    <Grid BackgroundColor="Red" Padding="0" ColumnSpacing="5" RowSpacing="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -39,87 +25,61 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Image
-            x:Name="f1"
+
+        <Button
+            Image="{Binding ImgField1}"
             Grid.Row="0"
             Grid.Column="0"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="1" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f2"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="0" />
+        <Button
+            Image="{Binding ImgField2}"
             Grid.Row="0"
             Grid.Column="1"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="2" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f3"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="1" />
+        <Button
+            Image="{Binding ImgField3}"
             Grid.Row="0"
             Grid.Column="2"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="3" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f4"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="2" />
+        <Button
+            Image="{Binding ImgField4}"
             Grid.Row="1"
             Grid.Column="0"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="4" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f5"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="3" />
+        <Button
+            Image="{Binding ImgField5}"
             Grid.Row="1"
             Grid.Column="1"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="5" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f6"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="4" />
+        <Button
+            Image="{Binding ImgField6}"
             Grid.Row="1"
             Grid.Column="2"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="6" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f7"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="5" />
+        <Button
+            Image="{Binding ImgField7}"
             Grid.Row="2"
             Grid.Column="0"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="7" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f8"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="6" />
+        <Button
+            Image="{Binding ImgField8}"
             Grid.Row="2"
             Grid.Column="1"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="8" 
-            Source="X.png"
-            />
-        <Image
-            x:Name="f9"
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="7" />
+        <Button
+            Image="{Binding ImgField9}"
             Grid.Row="2"
             Grid.Column="2"
-            BackgroundColor="Green"
-            Command="{Binding MakeStep}"
-            CommandParameter="9" 
-            Source="X.png"
-            />
+            Command="{Binding MakeStepCommand}"
+            CommandParameter="8" />
 
 
     </Grid>
