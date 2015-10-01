@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XOGame.Views.FieldPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#DBDBDB" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="FontSize" Value="55" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <Style x:Key="OrangeButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#FFA200" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="FontSize" Value="55" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="ResultLabel" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="FontSize" Value="55" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="Red" Padding="15" ColumnSpacing="5" RowSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image
+            x:Name="f1"
+            Grid.Row="0"
+            Grid.Column="0"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="1" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f2"
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="2" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f3"
+            Grid.Row="0"
+            Grid.Column="2"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="3" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f4"
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="4" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f5"
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="5" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f6"
+            Grid.Row="1"
+            Grid.Column="2"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="6" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f7"
+            Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="7" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f8"
+            Grid.Row="2"
+            Grid.Column="1"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="8" 
+            Source="X.png"
+            />
+        <Image
+            x:Name="f9"
+            Grid.Row="2"
+            Grid.Column="2"
+            BackgroundColor="Green"
+            Command="{Binding MakeStep}"
+            CommandParameter="9" 
+            Source="X.png"
+            />
+
+
+    </Grid>
+</ContentPage>
